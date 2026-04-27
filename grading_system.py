@@ -19,7 +19,9 @@ letter_grade = ""
 is_passing = False
 message = ""
 
-
+# Variables Made By Us
+late_penalty = 10
+extra_credit_bonus = 5
 # ------------------------------------------------------------
 # Step 2: Apply late penalty
 # ------------------------------------------------------------
@@ -30,7 +32,7 @@ message = ""
 # - set message to "Late penalty applied."
 
 if was_late == True:
-    final_score -= 10
+    final_score -= late_penalty
     message = "Late penalty applied."
 
 
@@ -44,7 +46,7 @@ if was_late == True:
 # - set message to "Extra credit applied."
 
 if extra_credit_completed == True:
-    final_score += 5
+    final_score += extra_credit_bonus
     message = "Extra credit applied."
 
 
