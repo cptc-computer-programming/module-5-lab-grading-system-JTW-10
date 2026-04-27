@@ -29,8 +29,8 @@ message = ""
 # - subtract 10 from final_score
 # - set message to "Late penalty applied."
 
-if was_late == "yes":
-    final_score =- 10
+if was_late == True:
+    final_score -= 10
     message = "Late penalty applied."
 
 
@@ -43,8 +43,8 @@ if was_late == "yes":
 # - add 5 to final_score
 # - set message to "Extra credit applied."
 
-if extra_credit_completed == "yes":
-    final_score =+ 5
+if extra_credit_completed == True:
+    final_score += 5
     message = "Extra credit applied."
 
 
