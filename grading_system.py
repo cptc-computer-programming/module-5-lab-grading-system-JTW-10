@@ -19,9 +19,11 @@ letter_grade = ""
 is_passing = False
 message = ""
 
-# Variables Made By Us
+# Variables Made By Student
 late_penalty = 10
 extra_credit_bonus = 5
+late_message = ""
+extra_credit_message = ""
 # ------------------------------------------------------------
 # Step 2: Apply late penalty
 # ------------------------------------------------------------
@@ -33,7 +35,7 @@ extra_credit_bonus = 5
 
 if was_late == True:
     final_score -= late_penalty
-    message = "Late penalty applied."
+    late_message = "Late penalty applied."
 
 
 # ------------------------------------------------------------
@@ -47,7 +49,7 @@ if was_late == True:
 
 if extra_credit_completed == True:
     final_score += extra_credit_bonus
-    message = "Extra credit applied."
+    extra_credit_message = "Extra credit applied."
 
 
 # ------------------------------------------------------------
@@ -175,3 +177,7 @@ print("Letter grade:", letter_grade)
 print("Passing:", is_passing)
 # print("Needs review:", needs_review)
 print("Message:", message)
+if was_late == True:
+    print(late_message)
+elif extra_credit_completed == True:
+    print(extra_credit_message)
