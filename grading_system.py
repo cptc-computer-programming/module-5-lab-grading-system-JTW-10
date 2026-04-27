@@ -179,5 +179,5 @@ print("Passing:", is_passing)
 print("Message:", message)
 if was_late == True:
     print(late_message)
-elif extra_credit_completed == True:
+if extra_credit_completed == True:
     print(extra_credit_message)
